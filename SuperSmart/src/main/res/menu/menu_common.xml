@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.supersmart.CommonActivity">
+
+    <item android:title="@string/action_settings"
+          android:showAsAction="never">
+        </item>
+</menu>

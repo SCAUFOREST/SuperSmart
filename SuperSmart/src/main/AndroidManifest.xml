@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.supersmart"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity
+            android:name="com.supersmart.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.supersmart.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServerConnectActivity"
+            android:theme="@android:style/Theme.Holo"
+            tools:ignore="NewApi">
+        </activity>
+        <activity
+            android:name="com.supersmart.CommonActivity"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="com.sevenheroes.CommonActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

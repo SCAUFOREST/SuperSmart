@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              tools:context="com.supersmart.fragment.PptManagerFragment">
+
+    <Button
+        android:id="@+id/btnPrior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/show_prior"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFirstPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_first"
+            />
+
+        <Button
+            android:id="@+id/btnDirectTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to"
+            />
+
+        <Button
+            android:id="@+id/btnCurrentPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_current"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ppt_exit"
+            android:id="@+id/btnExit"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/show_next"
+        />
+
+</LinearLayout>

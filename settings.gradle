@@ -1,0 +1,5 @@
+include ':ViewPagerIndicator', ':actionbarsherlock', ':SlidingMenu', ':SuperSmarter'
+project(':ViewPagerIndicator').projectDir = new File('extra_libs/ViewPagerIndicator')
+project(':actionbarsherlock').projectDir = new File('extra_libs/actionbarsherlock')
+project(':SlidingMenu').projectDir = new File('extra_libs/SlidingMenu')
+project(':SuperSmarter').projectDir = new File('SuperSmart')
