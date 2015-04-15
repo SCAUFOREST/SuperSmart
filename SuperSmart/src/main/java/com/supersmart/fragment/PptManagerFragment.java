@@ -91,12 +91,8 @@ public class PptManagerFragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        ViewUtil.toast("click");
         try {
             if(mDataOutputStream != null) {
-                ViewUtil.toast("stream not null");
-
-
                 switch (v.getId()) {
 
                     case R.id.btnCurrentPage:

@@ -1,32 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context="com.supersmart.fragment.MouseControllerFragment"
-    android:orientation="horizontal">
-
-
-    <Button
-        android:layout_width="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.supersmart.fragment.MouseControllerFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Left"
-        android:id="@+id/btnLeft"
-        android:layout_gravity="bottom"/>
+        android:padding="10dp"
+        android:id="@+id/textView"/>
+</ScrollView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <View
+        android:id="@+id/vTouchPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="wheel"
-        android:id="@+id/btnWheel"
-        android:layout_gravity="bottom"/>
+        android:background="@color/black"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="right"
-        android:id="@+id/btnRight"
-        android:layout_gravity="bottom"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="Left"/>
+
+        <Button
+            android:id="@+id/btnWheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="wheel"/>
+
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:text="right"/>
+    </LinearLayout>
 </LinearLayout>
